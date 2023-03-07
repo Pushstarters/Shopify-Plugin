@@ -9,7 +9,8 @@
     "dev": "shopify app dev",
     "info": "shopify app info",
     "generate": "shopify app generate",
-    "deploy": "shopify app deploy"
+    "deploy": "npm run delete-ds && shopify app deploy",
+    "delete-ds": "find . -name '.DS_Store' -delete"
   },
   "dependencies": {
     "@shopify/app": "3.43.0",
